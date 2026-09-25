@@ -1,0 +1,35 @@
+F:\Student OS\SpecKit\parakhOS\backend\node_modules\pg-pool\index.js:45
+    Error.captureStackTrace(err)
+          ^
+
+error: password authentication failed for user "studentos"
+    at F:\Student OS\SpecKit\parakhOS\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async DatabaseService.initializeSchema (F:\Student OS\SpecKit\parakhOS\backend\dist\database.service.js:72:9)
+    at async DatabaseService.onModuleInit (F:\Student OS\SpecKit\parakhOS\backend\dist\database.service.js:28:9)
+    at async Promise.all (index 0)
+    at async callModuleInitHook (F:\Student OS\SpecKit\parakhOS\backend\node_modules\@nestjs\core\hooks\on-module-init.hook.js:43:5)
+    at async NestApplication.callInitHook (F:\Student OS\SpecKit\parakhOS\backend\node_modules\@nestjs\core\nest-application-context.js:245:13)
+    at async NestApplication.init (F:\Student OS\SpecKit\parakhOS\backend\node_modules\@nestjs\core\nest-application.js:105:9)
+    at async NestApplication.listen (F:\Student OS\SpecKit\parakhOS\backend\node_modules\@nestjs\core\nest-application.js:177:13)
+    at async bootstrap (F:\Student OS\SpecKit\parakhOS\backend\dist\main.js:15:5) {
+  length: 105,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '329',
+  routine: 'auth_failed'
+}
+
+Node.js v24.18.0
